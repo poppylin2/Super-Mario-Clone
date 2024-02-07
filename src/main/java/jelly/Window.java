@@ -118,10 +118,10 @@ public class Window {
                 fadeToblack = true;
             }
 
-
+            // Displays the currently drawn frame on the screen and starts preparing for the next frame's drawing. Double buffering mechanism, helps prevent screen tearing and flickering
             glfwSwapBuffers(glfwWindow);
 
-
+            // Determine the frame duration (dt) by finding the time elapsed between endTime and beginTime. Crucial for time-dependent animations and physics to achieve consistent behavior across different frame rates
             endTime = Time.getTime();
             float dt = endTime - beginTime;
             beginTime = endTime;
