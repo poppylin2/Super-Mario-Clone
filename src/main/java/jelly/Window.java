@@ -17,8 +17,10 @@ public class Window {
     private static Window window = null;
     private long glfwWindow;
 
-    private float r, g, b, a;
+    public float r, g, b, a;
     private boolean fadeToblack = false;
+
+    private static Scene currentScene;
 
     private Window(){
         this.width = 1920;
@@ -28,6 +30,21 @@ public class Window {
         b = 1;
         g = 1;
         a = 1;
+    }
+
+    public static void changeScene(int newScene){
+        switch(newScene){
+            case 0:
+                currentScene = new LevelEditorScene();
+                //currentScene.init();
+                break;
+            case 1:
+                currentScene = new LevelScene();
+                break;
+            default:
+                assert false: "Unknown scene '" + newScene + "'";
+                break;
+        }
     }
 
     public static Window get(){
@@ -93,12 +110,13 @@ public class Window {
         // bindings available for use.
         GL.createCapabilities();
 
-
+        Window.changeScene(0);
     }
 
     public void loop(){
         float beginTime = Time.getTime();
         float endTime = Time.getTime();
+        float dt = -1.0f;
 
         while (!glfwWindowShouldClose(glfwWindow)){
             //  Poll event
@@ -108,6 +126,10 @@ public class Window {
             // The `GL_COLOR_BUFFER_BIT` indicates that the color buffer (the part of the framebuffer that holds the image displayed on the screen) should be cleared.
             glClearColor(r, g, b, a);
             glClear(GL_COLOR_BUFFER_BIT);
+
+            if(dt >= 0){
+                currentScene.update(dt);
+            }
 
             if(fadeToblack){
                 r = Math.max(r - 0.01f, 0);
@@ -123,9 +145,8 @@ public class Window {
 
             // Determine the frame duration (dt) by finding the time elapsed between endTime and beginTime. Crucial for time-dependent animations and physics to achieve consistent behavior across different frame rates
             endTime = Time.getTime();
-            float dt = endTime - beginTime;
+            dt = endTime - beginTime;
             beginTime = endTime;
         }
-
     }
 }
