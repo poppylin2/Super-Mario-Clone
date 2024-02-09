@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4bd47b8-9d43-47ba-8358-90c5ff3ff31c" name="Changes" comment="Add comments regarding the window">
+    <list default="true" id="d4bd47b8-9d43-47ba-8358-90c5ff3ff31c" name="Changes" comment="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jelly/LevelEditorScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jelly/LevelEditorScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jelly/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jelly/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jelly/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jelly/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,15 +31,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;poppylin2&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bb059da9-4efc-4390-9ebc-b15aadfccaa6" />
+        <option name="url" value="https://github.com/poppylin2/SuperPaws.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2c3EVtuiqduBUx1LKUH0UjUiLNT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -45,26 +62,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build SuperPaws.executor": "Run",
-    "Gradle.SuperPaws [:main.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.gitlab.GitLabSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build SuperPaws.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SuperPaws [:main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,7 +97,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707331888680</updated>
-      <workItem from="1707331889697" duration="12316000" />
+      <workItem from="1707331889697" duration="12522000" />
+      <workItem from="1707409805949" duration="3582000" />
+      <workItem from="1707509926385" duration="7195000" />
     </task>
     <task id="LOCAL-00001" summary="Create a window, and implement singleton MouseListener/KeyListener for LWJGL event handling">
       <option name="closed" value="true" />
@@ -98,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707336271719</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene">
+      <option name="closed" value="true" />
+      <created>1707382447570</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707382447570</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene">
+      <option name="closed" value="true" />
+      <created>1707382490320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707382490320</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +179,7 @@
     <MESSAGE value="Create a window, and implement singleton MouseListener/KeyListener for LWJGL event handling" />
     <MESSAGE value="first commit" />
     <MESSAGE value="Add comments regarding the window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments regarding the window" />
+    <MESSAGE value="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene" />
   </component>
 </project>
