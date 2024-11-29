@@ -1,6 +1,36 @@
-# Coding a 2D Game Engine in Java
+# 2D Game Engine and Super Mario Clone
 
-This is the repository for a YouTube series [here](https://www.youtube.com/watch?v=VyKE7vz65rY&list=PLtrSb4XxIVbp8AKuEAlwNXDxr99e3woGE). If you want to run the code yourself follow these instructions:
+A modular 2D game engine built with **Java** and **OpenGL**, featuring a fully playable Super Mario clone. The project demonstrates game development fundamentals, including custom rendering pipelines, real-time physics, and object-oriented design.
+
+---
+
+## Features
+
+### Game Engine
+- **Custom Rendering Pipeline**: 
+  - Built with OpenGL, supporting sprite batching, shader management, and real-time rendering.
+  - Efficient frame updates and transformations for dynamic gameplay.
+- **Physics System**:
+  - Integrated with Box2D for gravity, collision detection, and object interactions.
+  - Dynamic simulation of 2D environments, including player and enemy behavior.
+- **Extensible Design**:
+  - Modular architecture with reusable and extendable game entity classes.
+  - Object-Oriented Programming principles for maintainability and scalability.
+
+### Super Mario Clone
+- **Game Mechanics**:
+  - Playable character with movement, jumping, and interactions with obstacles and enemies.
+  - Implemented parallax scrolling and animations for enhanced visuals.
+
+---
+
+## Requirements
+
+- **Java 8** or higher
+- **Gradle** (for build and dependency management)
+- OpenGL
+
+---
 
 ## To Run
 
