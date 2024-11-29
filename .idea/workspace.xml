@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4bd47b8-9d43-47ba-8358-90c5ff3ff31c" name="Changes" comment="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="d4bd47b8-9d43-47ba-8358-90c5ff3ff31c" name="Changes" comment="Add basic vertex and fragment shaders for color rendering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jelly/LevelEditorScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jelly/LevelEditorScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jelly/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jelly/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jelly/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jelly/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +66,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java Project/LearnGUI&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -78,7 +75,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -99,7 +96,12 @@
       <updated>1707331888680</updated>
       <workItem from="1707331889697" duration="12522000" />
       <workItem from="1707409805949" duration="3582000" />
-      <workItem from="1707509926385" duration="7195000" />
+      <workItem from="1707509926385" duration="7658000" />
+      <workItem from="1708903442047" duration="313000" />
+      <workItem from="1708983461497" duration="23000" />
+      <workItem from="1714950704180" duration="3119000" />
+      <workItem from="1725098226628" duration="34000" />
+      <workItem from="1725099117011" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Create a window, and implement singleton MouseListener/KeyListener for LWJGL event handling">
       <option name="closed" value="true" />
@@ -133,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707382490320</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created vertexArray, elementArray, and draw a rectangular">
+      <option name="closed" value="true" />
+      <created>1707522457888</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707522457888</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add basic vertex and fragment shaders for color rendering">
+      <option name="closed" value="true" />
+      <created>1707522650895</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707522650895</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +198,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Add comments regarding the window" />
     <MESSAGE value="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a abstract class Scene, and its two inheritance LevelScene and LevelEditorScene" />
+    <MESSAGE value="Created vertexArray, elementArray, and draw a rectangular" />
+    <MESSAGE value="Add basic vertex and fragment shaders for color rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add basic vertex and fragment shaders for color rendering" />
   </component>
 </project>
